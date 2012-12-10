@@ -47,14 +47,24 @@ class Feed(object):
         feed = self.parseFeed()
         cache.set(self.feed_url, (time.time(), feed))
 
+    def search(self):
+        pass
+
 
 class FeedEntry(object):
 
-    def __init__(self, title, link, summary, published):
+    def __init__(self, title, entry):
         self.title = title
-        self.link = link
-        self.summary = summary
-        self.published = published
+        self.entry = entry
+
+    def get(self, property):
+        return self.entry[property]
+
+    def getTitle(self):
+        return self.title
+
+    def getEntry(self):
+        return self.entry
 
 
 if __name__ == "__main__":
