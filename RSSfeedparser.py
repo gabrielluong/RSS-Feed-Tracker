@@ -1,8 +1,13 @@
 from pprint import pprint
+from dropbox import client, rest, session
+
 import feedparser
 import redis
 import time
 
+
+DROPBOX_APP_KEY = 'INSERT_APP_KEY_HERE'
+DROPBOX_APP_SECRET = 'INSERT_SECRET_HERE'
 # Max age (in seconds) of each feed in the cache
 MAX_CACHED_ELAPSED_TIME = 300
 
