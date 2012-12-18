@@ -1,0 +1,3 @@
+[submodule "lib/dropboxwrapper"]
+	path = lib/dropboxwrapper
+	url = git@github.com:gabrielluong/DropboxWrapper.git
