@@ -1,5 +1,3 @@
-from pprint import pprint
-from dropbox import client, rest, session
 from lib.dropboxwrapper.dropboxwrapper import Dropbox
 
 import feedparser
