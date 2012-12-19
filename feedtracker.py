@@ -24,6 +24,9 @@ class FeedTracker(Dropbox):
     def add_feed(self, feed):
         self.feeds.append(feed)
 
+    def remove_feed(self, feed):
+        self.feeds.remove(feed)
+
     def update_feeds(self):
         for feed in self.feeds:
             feed.update()
